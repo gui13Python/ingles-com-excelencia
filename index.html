@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglês com Excelência - Aulas com Professora Doutora Yainy Z. Buitrago R.</title>
+    <meta name="description" content="Aprenda inglês com professora doutora em linguística. Aulas ao vivo pelo Google Meet, método personalizado. WhatsApp">
+    <meta name="keywords" content="curso de inglês, aulas de inglês online, professora doutora inglês, inglês com nativa, Google Meet, inglês para adultos, inglês para negócios">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7348272036985298" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset e configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #3498db;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: #2c3e50;
+        }
+        
+        .logo span {
+            color: #2c3e50;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a:hover {
+            color: #2c3e50;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #3498db;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Banner de anúncio do topo */
+        .ad-top {
+            background-color: white;
+            border-radius: 12px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            color: #3498db;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 2px dashed #3498db;
+            overflow: hidden;
+        }
+        
+        /* Conteúdo principal */
+        .main-content {
+            background-color: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Título da página */
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        
+        .page-title span {
+            color: #3498db;
+        }
+        
+        .page-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Seção da Professora */
+        .teacher-section {
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .teacher-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .teacher-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .teacher-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .teacher-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .teacher-info p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .whatsapp-btn i {
+            margin-right: 10px;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Por que Aprender Inglês */
+        .why-english {
+            margin: 40px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .benefit-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s;
+            border-left: 4px solid #3498db;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* Comparação de Cursos */
+        .comparison-section {
+            margin: 50px 0;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        .comparison-table th {
+            background: #3498db;
+            color: white;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        
+        .highlight {
+            background: #e8f4fc !important;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .check {
+            color: #27ae60;
+            font-size: 1.2rem;
+        }
+        
+        .times {
+            color: #e74c3c;
+            font-size: 1.2rem;
+        }
+        
+        /* Método de Ensino */
+        .method-section {
+            margin: 40px 0;
+        }
+        
+        .method-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+        
+        /* Depoimentos */
+        .testimonials {
+            margin: 50px 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #3498db;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        /* Anúncio inline */
+        .ad-inline {
+            background-color: white;
+            border-radius: 12px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            color: #3498db;
+            font-weight: 700;
+            font-size: 1.3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 2px dashed #3498db;
+            overflow: hidden;
+        }
+        
+        /* CTA Final */
+        .final-cta {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            border-radius: 12px;
+            padding: 40px;
+            margin: 40px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn {
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cta-btn.primary {
+            background: #25D366;
+            color: white;
+        }
+        
+        .cta-btn.secondary {
+            background: white;
+            color: #3498db;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+            padding-right: 20px;
+        }
+        
+        .footer-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links li a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        
+        .footer-links li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .ad-top {
+                height: 90px;
+            }
+            
+            .teacher-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .teacher-photo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .header-content {
+                position: relative;
+            }
+            
+            .ad-top {
+                height: 80px;
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .ad-top, .ad-footer {
+                height: 70px;
+                font-size: 1rem;
+            }
+            
+            .ad-inline {
+                height: 200px;
+                font-size: 1.1rem;
+            }
+            
+            .teacher-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                Inglês<span>Excelência</span>
+            </a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#professora"><i class="fas fa-chalkboard-teacher"></i> Professora</a></li>
+                    <li><a href="#metodo"><i class="fas fa-book"></i> Método</a></li>
+                    <li><a href="#comparacao"><i class="fas fa-balance-scale"></i> Comparação</a></li>
+                    <li><a href="#contato"><i class="fas fa-phone-alt"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de anúncio do topo -->
+    <div class="container">
+        <div class="ad-top">
+            <!-- Google AdSense - Banner Topo -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7348272036985298"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <div class="main-content">
+            <h1 class="page-title">Inglês com <span>Excelência Acadêmica</span></h1>
+            
+            <p class="page-subtitle">
+                Aprenda inglês com uma professora doutora em linguística. Método personalizado, aulas ao vivo pelo Google Meet 
+                e formação acadêmica de alto nível para garantir seu aprendizado eficiente.
+            </p>
+            
+            <!-- Seção da Professora -->
+            <section id="professora" class="teacher-section">
+                <div class="teacher-photo">
+                    <img src="https://media-mia5-1.cdn.whatsapp.net/v/t61.24694-24/649474957_1686806342687910_6906895911733500063_n.jpg?ccb=11-4&oh=01_Q5Aa4AE5u8U2LW7fyZWmMG2Dg7JPhX7hwrHa3qpOZ2ZlC8V1GA&oe=69C3CC16&_nc_sid=5e03e0&_nc_cat=101" 
+                         alt="Professora Yainy Z. Buitrago R.">
+                </div>
+                <div class="teacher-info">
+                    <h2>Professora: Yainy Z. Buitrago R.</h2>
+                    <h3>Doutora em Linguística e Educação</h3>
+                    <p><i class="fas fa-graduation-cap"></i> Doutorado em Linguística Aplicada</p>
+                    <p><i class="fas fa-award"></i> 15+ anos de experiência no ensino de inglês</p>
+                    <p><i class="fas fa-globe-americas"></i> Experiência internacional em ensino de línguas</p>
+                    <p><i class="fas fa-users"></i> Metodologia personalizada para cada aluno</p>
+                    
+                    <a href="https://wa.me/556181034432" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp <b>saiba mais</b> 
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Por que Aprender Inglês -->
+            <section id="porque" class="why-english">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+                    <i class="fas fa-question-circle"></i> Por que Aprender Inglês?
+                </h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Oportunidades Profissionais</h3>
+                        <p>Salários até 70% maiores para profissionais bilíngues</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Estudos no Exterior</h3>
+                        <p>Acesso às melhores universidades do mundo</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-plane"></i>
+                        <h3>Viagens Internacionais</h3>
+                        <p>Comunique-se em mais de 50 países</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Desenvolvimento Cognitivo</h3>
+                        <p>Melhora memória e capacidade de raciocínio</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Anúncio inline -->
+            <div class="ad-inline">
+                <!-- Google AdSense - Inline -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-7348272036985298"
+                     data-ad-slot="0987654321"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <!-- Comparação de Cursos -->
+            <section id="comparacao" class="comparison-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+                    <i class="fas fa-balance-scale"></i> Comparação: Por que Escolher Nossa Metodologia?
+                </h2>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Cursos Tradicionais</th>
+                            <th>Plataformas Online Genéricas</th>
+                            <th class="highlight">Nossa Metodologia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Formação do Professor</td>
+                            <td><i class="fas fa-times times"></i> Graduação</td>
+                            <td><i class="fas fa-times times"></i> Variável</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> Doutorado em Linguística</td>
+                        </tr>
+                        <tr>
+                            <td>Aulas Personalizadas</td>
+                            <td><i class="fas fa-times times"></i> Turmas grandes</td>
+                            <td><i class="fas fa-times times"></i> Conteúdo padronizado</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> Plano individual</td>
+                        </tr>
+                        <tr>
+                            <td>Flexibilidade de Horário</td>
+                            <td><i class="fas fa-times times"></i> Horários fixos</td>
+                            <td><i class="fas fa-check check"></i> Flexível</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> Totalmente flexível</td>
+                        </tr>
+                        <tr>
+                            <td>Ao Vivo com Professor</td>
+                            <td><i class="fas fa-check check"></i> Sim</td>
+                            <td><i class="fas fa-times times"></i> Gravações</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> 100% ao vivo</td>
+                        </tr>
+                        <tr>
+                            <td>Correção em Tempo Real</td>
+                            <td><i class="fas fa-check check"></i> Parcial</td>
+                            <td><i class="fas fa-times times"></i> Automatizada</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> Correção detalhada</td>
+                        </tr>
+                        <tr>
+                            <td>Foco em Conversação</td>
+                            <td><i class="fas fa-times times"></i> Limitado</td>
+                            <td><i class="fas fa-times times"></i> Pouco</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> 80% da aula</td>
+                        </tr>
+                        <tr>
+                            <td>Material Didático</td>
+                            <td><i class="fas fa-check check"></i> Livros</td>
+                            <td><i class="fas fa-check check"></i> Digital</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> Personalizado + Digital</td>
+                        </tr>
+                        <tr>
+                            <td>Suporte Individual</td>
+                            <td><i class="fas fa-times times"></i> Limitado</td>
+                            <td><i class="fas fa-times times"></i> Chatbot</td>
+                            <td class="highlight"><i class="fas fa-check check"></i> WhatsApp direto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Método de Ensino -->
+            <section id="metodo" class="method-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+                    <i class="fas fa-book-open"></i> Nosso Método de Ensino
+                </h2>
+                
+                <div class="method-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Avaliação Inicial</h3>
+                        <p>Teste de nivelamento para identificar suas necessidades específicas</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Plano Personalizado</h3>
+                        <p>Desenvolvimento de plano de estudos baseado em seus objetivos</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Aulas ao Vivo</h3>
+                        <p>Sessões interativas pelo Google Meet com foco em conversação</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Prática Constante</h3>
+                        <p>Exercícios personalizados e acompanhamento contínuo</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Depoimentos -->
+            <section class="testimonials">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+                    <i class="fas fa-comments"></i> O que Nossos Alunos Dizem
+                </h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Após 6 meses de aulas, consegui uma promoção na empresa multinacional onde trabalho. 
+                            A metodologia da professora Yainy é incrível!"
+                        </p>
+                        <p class="testimonial-author">- Carlos Silva, Executivo</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Finalmente encontrei uma professora que entende minhas dificuldades específicas. 
+                            As aulas são completamente personalizadas."
+                        </p>
+                        <p class="testimonial-author">- Ana Paula, Estudante de Mestrado</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Preparei-me para o IELTS com a professora Yainy e alcancei nota 8.0. 
+                            Sua experiência acadêmica faz toda diferença!"
+                        </p>
+                        <p class="testimonial-author">- Roberto, Médico</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Final -->
+            <section id="contato" class="final-cta">
+                <h2>Comece Sua Jornada no Inglês Hoje!</h2>
+                <p>
+                    Invista no seu futuro com uma professora doutora em linguística. 
+                    Aulas 100% personalizadas, ao vivo pelo Google Meet, com foco nos seus objetivos específicos.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/556181034432" target="_blank" class="cta-btn primary">
+                        <i class="fab fa-whatsapp"></i> Agendar Aula Experimental
+                    </a>
+                    <a href="#professora" class="cta-btn secondary">
+                        <i class="fas fa-info-circle"></i> Conhecer a Professora
+                    </a>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
+                    <i class="fas fa-clock"></i> Horários flexíveis | 
+                    <i class="fas fa-laptop"></i> Aulas pelo Google Meet | 
+                    <i class="fas fa-user-graduate"></i> Formação Doutorado
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Inglês Excelência</h4>
+                    <p>Aulas de inglês com professora doutora em linguística. Método personalizado para resultados rápidos e eficientes.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/556181034432" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Email: yainybuitrago@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Espanha - Madrid</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#professora">Professora</a></li>
+                        <li><a href="#metodo">Método</a></li>
+                        <li><a href="#comparacao">Comparação</a></li>
+                        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Inglês Excelência. Todos os direitos reservados. | Este site contém anúncios do Google AdSense.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">
+                    Professora: Yainy Z. Buitrago R. | Doutora em Linguística
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+                nav.style.position = 'absolute';
+                nav.style.top = '60px';
+                nav.style.right = '20px';
+                nav.style.backgroundColor = 'white';
+                nav.style.padding = '20px';
+                nav.style.borderRadius = '8px';
+                nav.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+                nav.style.width = '200px';
+            }
+        });
+
+        // Inicializar todos os anúncios
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
